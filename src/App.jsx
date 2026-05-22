@@ -9,17 +9,17 @@ const ZOHO_TOKENS_PER_AI_RESOLUTION = 15000;
 
 const problemPoints = [
   ["Reps stop experimenting", "Teams avoid using AI Agents for smaller tasks because every interaction feels billable."],
-  ["Support teams ration automation", "AI Agent workflows become restricted instead of integrated into daily operations."],
+  ["CX teams ration automation", "AI Agent workflows become restricted instead of integrated into daily operations."],
   ["Managers track usage, not outcomes", "Instead of focusing on productivity gains, teams focus on limiting AI Agent costs."],
 ];
 
 const aiUseCases = [
-  "Summarize leads and accounts",
-  "Draft follow-up emails",
+  "Summarize leads and opportunities",
+  "Draft sales follow-up emails",
   "Prepare for customer meetings",
-  "Generate sales insights",
-  "Assist with customer conversations",
-  "Automate repetitive CRM work",
+  "Generate pipeline insights",
+  "Assist customer conversations",
+  "Automate CRM workflows",
 ];
 
 const comparisonRows = [
@@ -759,7 +759,7 @@ export default function StopCountingConversations() {
               AI Agents should help your team move faster, not make them wonder what every conversation costs.
             </p>
             <p className="hero-copy">
-              HubSpot Breeze Customer Agent charges based on resolved conversations. Zia Agents gives teams predictable AI usage with 30M included tokens, so teams can adopt AI Agents across support and customer workflows without hesitation.
+              HubSpot Breeze Customer Agent charges based on resolved conversations. Zia Agents gives sales and CX teams predictable AI Agent usage with 30M included tokens, so teams can adopt AI Agents across customer interactions and workflows without hesitation.
             </p>
             <div className="hero-actions">
               <ButtonLink href="#difference" variant="primary">Explore Zia Agents</ButtonLink>
@@ -834,7 +834,7 @@ export default function StopCountingConversations() {
           <div className="section-head">
             <h2 className="section-title" id="adoption-proof-title">Built for adoption. Not hesitation.</h2>
             <p className="section-copy">
-              Zia Agents includes 30M tokens, giving teams room to use AI across customer support and service workflows without constantly watching consumption.
+              Zia Agents includes 30M tokens, giving sales and CX teams the freedom to use AI Agents across customer interactions, follow-ups, insights, and workflows without constantly watching consumption.
             </p>
           </div>
           <div>
@@ -844,7 +844,7 @@ export default function StopCountingConversations() {
               ))}
             </div>
             <div className="difference-note">
-              The best customer AI agent is the one your team never hesitates to use.
+              AI Agents work best when teams use them freely across every customer interaction.
             </div>
           </div>
         </div>
