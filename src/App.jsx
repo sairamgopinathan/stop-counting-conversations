@@ -8,9 +8,9 @@ const ZOHO_PRICE_PER_MILLION_BILLABLE_TOKENS = 1;
 const ZOHO_TOKENS_PER_AI_RESOLUTION = 15000;
 
 const problemPoints = [
-  ["Reps stop experimenting", "Teams avoid using AI for smaller tasks because every interaction feels billable."],
-  ["Support teams ration automation", "AI workflows become restricted instead of integrated into daily operations."],
-  ["Managers track usage, not outcomes", "Instead of focusing on productivity gains, teams focus on limiting AI costs."],
+  ["Reps stop experimenting", "Teams avoid using AI Agents for smaller tasks because every interaction feels billable."],
+  ["Support teams ration automation", "AI Agent workflows become restricted instead of integrated into daily operations."],
+  ["Managers track usage, not outcomes", "Instead of focusing on productivity gains, teams focus on limiting AI Agent costs."],
 ];
 
 const aiUseCases = [
@@ -81,9 +81,9 @@ function CostCalculator({ resolvedConversations, setResolvedConversations }) {
   return (
     <aside className="calculator-card" aria-label="AI usage cost calculator">
       <div className="calculator-header">
-        <p className="eyebrow">AI cost calculator</p>
-        <h2>Compare AI usage costs</h2>
-        <p>Compare AI customer agent costs between Zia Agents and HubSpot Breeze Customer Agent.</p>
+        
+        <h2>Compare AI Agent costs</h2>
+        <p>For comparison, we assume 15,000 tokens ≈ 100 credits ≈ one resolved customer conversation.</p>
       </div>
 
       <SliderControl
@@ -97,7 +97,7 @@ function CostCalculator({ resolvedConversations, setResolvedConversations }) {
 
       <div className="calculator-results">
         <div className="result-card positive">
-          <span>Zoho CRM / Zia Agents</span>
+          <span>Zia Agents</span>
           <strong>{wholeCurrencyFormatter.format(zohoMonthlyCost)}</strong>
           <ul className="result-list">
             <li>30M tokens included in Standard Edition</li>
@@ -113,19 +113,15 @@ function CostCalculator({ resolvedConversations, setResolvedConversations }) {
             <li>5,000 included Enterprise credits</li>
             <li>100 credits per resolution used by Breeze Customer Agent</li>
             <li>Included {numberFormatter.format(hubSpotIncludedResolutions)} resolved conversations/month</li>
-            <li>{numberFormatter.format(hubSpotBillableConversations)} billable resolutions x $0.50</li>
+            <li>{numberFormatter.format(hubSpotBillableConversations)} billable resolutions × $0.50</li>
           </ul>
         </div>
       </div>
 
       <div className="calculator-summary">
-        <strong>{multiple ? `${multiple.toFixed(1)}x` : "$0"}</strong>
-        <p>
-          {multiple
-            ? `HubSpot-style pricing is estimated to cost ${multiple.toFixed(1)}x more after included credits in this scenario.`
-            : "Zoho CRM AI usage is covered by the included token allowance in this scenario."}
-        </p>
-        <span>{wholeCurrencyFormatter.format(monthlyDifference)} estimated monthly difference</span>
+        <strong>25× lower</strong>
+        <p>Estimated monthly AI Agent operating cost difference in high-volume customer support workflows.</p>
+        <span>Based on resolved conversation pricing vs token-based consumption models.</span>
       </div>
 
       <p className="calculator-disclaimer">
@@ -716,8 +712,8 @@ export default function StopCountingConversations() {
           }
 
           .comparison-cell:nth-child(1)::before { content: "Category"; }
-          .comparison-cell:nth-child(2)::before { content: "Zoho CRM"; }
-          .comparison-cell:nth-child(3)::before { content: "Metered AI CRMs"; }
+          .comparison-cell:nth-child(2)::before { content: "Zia Agents"; }
+          .comparison-cell:nth-child(3)::before { content: "HubSpot Breeze"; }
         }
 
         @media (max-width: 720px) {
@@ -751,7 +747,7 @@ export default function StopCountingConversations() {
         </a>
         <div className="nav-actions">
           <ButtonLink href="#comparison" variant="secondary">See Pricing Plans</ButtonLink>
-          <ButtonLink href="#difference" variant="primary">Explore Zoho CRM AI</ButtonLink>
+          <ButtonLink href="#difference" variant="primary">Explore Zia Agents</ButtonLink>
         </div>
       </header>
 
@@ -760,19 +756,19 @@ export default function StopCountingConversations() {
           <div>
             <h1>Stop counting conversations.</h1>
             <p className="hero-lede">
-              AI should help your team move faster - not make them wonder what every conversation costs.
+              AI Agents should help your team move faster, not make them wonder what every conversation costs.
             </p>
             <p className="hero-copy">
-              Some CRMs charge every time an AI agent resolves a conversation. Zoho CRM gives you 30,000 AI credits included, so your team can use AI freely - for selling, supporting, following up, and getting work done.
+              HubSpot Breeze Customer Agent charges based on resolved conversations. Zia Agents gives teams predictable AI usage with 30M included tokens, so teams can adopt AI Agents across support and customer workflows without hesitation.
             </p>
             <div className="hero-actions">
-              <ButtonLink href="#difference" variant="primary">Explore Zoho CRM AI</ButtonLink>
+              <ButtonLink href="#difference" variant="primary">Explore Zia Agents</ButtonLink>
               <ButtonLink href="#comparison" variant="secondary">See Pricing Plans</ButtonLink>
             </div>
             <div className="proof-row">
-              <span>Predictable AI usage</span>
-              <span>Built for daily adoption</span>
-              <span>{numberFormatter.format(monthlyConversations)} resolved conversations/month</span>
+              <span>Predictable customer AI costs</span>
+              <span>Built for AI agent adoption</span>
+              <span>No per-resolution AI pricing</span>
             </div>
           </div>
           <CostCalculator
@@ -785,15 +781,15 @@ export default function StopCountingConversations() {
       <section className="section" id="problem" aria-labelledby="problem-title">
         <div className="container">
           <div className="section-head center">
-            <h2 className="section-title" id="problem-title">Metered AI changes how teams behave.</h2>
+            <h2 className="section-title" id="problem-title">Metered AI Agents change how teams behave.</h2>
             <p className="section-copy">
               When every AI conversation has a price tag, teams start asking the wrong question:
             </p>
           </div>
-          <div className="quote-box">“Should I use AI for this?”</div>
+          <div className="quote-box">“Should I use my AI Agent for this?”</div>
           <div className="section-head center" style={{ marginTop: "28px", marginBottom: "30px" }}>
             <p className="section-copy">
-              That hesitation kills adoption. AI should become a daily habit - not a budget decision.
+              That hesitation kills adoption. Customer AI agents should become part of daily operations, not a budgeting exercise.
             </p>
           </div>
           <div className="problem-grid">
@@ -808,39 +804,18 @@ export default function StopCountingConversations() {
         </div>
       </section>
 
-      <section className="section-muted" id="difference" aria-labelledby="difference-title">
-        <div className="container difference-layout">
-          <div className="section-head">
-            <h2 className="section-title" id="difference-title">Built for adoption. Not hesitation.</h2>
-            <p className="section-copy">
-              Zoho CRM includes 30,000 AI credits, giving your teams room to use AI across real business workflows.
-            </p>
-          </div>
-          <div>
-            <div className="use-case-list">
-              {aiUseCases.map((item) => (
-                <div key={item}>{item}</div>
-              ))}
-            </div>
-            <div className="difference-note">
-              The best AI is the AI your team never hesitates to use.
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section className="section" id="comparison" aria-labelledby="comparison-title">
         <div className="container">
           <div className="section-head center">
-            <h2 className="section-title" id="comparison-title">What happens when AI has a meter?</h2>
+            <h2 className="section-title" id="comparison-title">What happens when AI Agents have a meter?</h2>
             <p className="section-copy">
-              Per-conversation pricing does more than increase cost. It changes how often teams feel safe using AI.
+              Per-resolution pricing does more than increase cost. It changes how confidently teams adopt customer AI agents at scale.
             </p>
           </div>
           <div className="comparison-table">
             <div className="comparison-row header">
               <div className="comparison-cell">Category</div>
-              <div className="comparison-cell">Zoho CRM / Zia Agents</div>
+              <div className="comparison-cell">Zia Agents</div>
               <div className="comparison-cell">HubSpot Breeze Customer Agent</div>
             </div>
             {comparisonRows.map(([category, zoho, metered]) => (
@@ -854,17 +829,37 @@ export default function StopCountingConversations() {
         </div>
       </section>
 
+      <section className="section-muted" id="adoption-proof" aria-labelledby="adoption-proof-title">
+        <div className="container difference-layout">
+          <div className="section-head">
+            <h2 className="section-title" id="adoption-proof-title">Built for adoption. Not hesitation.</h2>
+            <p className="section-copy">
+              Zia Agents includes 30M tokens, giving teams room to use AI across customer support and service workflows without constantly watching consumption.
+            </p>
+          </div>
+          <div>
+            <div className="use-case-list">
+              {aiUseCases.map((item) => (
+                <div key={`adoption-${item}`}>{item}</div>
+              ))}
+            </div>
+            <div className="difference-note">
+              The best customer AI agent is the one your team never hesitates to use.
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="final-cta" aria-labelledby="closing-title">
         <div className="container">
           <h2 id="closing-title">Stop counting. Start selling.</h2>
           <p>
-            Give your team AI they can actually use - without second-guessing every conversation.
+            Give your team customer AI agents they can actually use without second-guessing every resolution.
           </p>
           <div className="final-actions">
-            <ButtonLink href="#top" variant="primary">Try Zoho CRM</ButtonLink>
+            <ButtonLink href="#top" variant="primary">Explore Zia Agents</ButtonLink>
             <ButtonLink href="#comparison" variant="secondary">Talk to sales</ButtonLink>
           </div>
-          <div className="campaign-line">The best AI is the AI your team never hesitates to use.</div>
         </div>
       </section>
     </main>
