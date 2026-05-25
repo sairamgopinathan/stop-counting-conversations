@@ -759,9 +759,11 @@ export default function StopCountingConversations() {
               AI Agents should help your team move faster, not make them wonder what every conversation costs.
             </p>
             <p className="hero-copy">
-              HubSpot Breeze Customer Agent charges 100 credits for every resolved conversation. That metered model discourages teams from adopting AI Agents freely across daily operations.
+              HubSpot Breeze Customer Agent charges 100 credits for every resolved conversation. After the included 5,000 credits, you are charged $0.50 for every conversation.
 
-Zia Agents includes 30M free monthly tokens on Zoho-hosted Standard models, giving sales and CX teams room to adopt AI Agents across customer interactions and workflows. Additional usage starts at $1 per 1M tokens.
+Zia Agents includes 30M free monthly tokens on Zoho-hosted Standard models. Additional usage starts at $1 per 1M tokens.
+
+Zoho gives sales and CX teams predictable AI Agent costs built for scalable daily operations.
             </p>
             <div className="hero-actions">
               <ButtonLink href="#difference" variant="primary">Explore Zia Agents</ButtonLink>
