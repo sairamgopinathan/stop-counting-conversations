@@ -8,7 +8,7 @@ const ZOHO_PRICE_PER_MILLION_BILLABLE_TOKENS = 1;
 const ZOHO_TOKENS_PER_AI_RESOLUTION = 15000;
 
 const problemPoints = [
-  ["Reps stop experimenting", "Teams avoid using AI Agents for smaller tasks because every interaction feels billable."],
+  ["Reps limit AI Agent usage", "Teams avoid using AI Agents for smaller tasks because every interaction feels billable."],
   ["CX teams ration automation", "AI Agent workflows become restricted instead of integrated into daily operations."],
   ["Managers track usage, not outcomes", "Instead of focusing on productivity gains, teams focus on limiting AI Agent costs."],
 ];
@@ -30,7 +30,7 @@ const comparisonRows = [
   ],
   ["Team behavior", "Encourages daily use", "Creates hesitation"],
   ["Budgeting", "More predictable", "Pricing can scale with every interaction"],
-  ["Adoption", "Built for experimentation", "Teams may ration usage"],
+  ["Adoption", "Built for daily operations", "Teams may ration usage"],
 ];
 
 const wholeCurrencyFormatter = new Intl.NumberFormat("en-US", {
@@ -759,7 +759,9 @@ export default function StopCountingConversations() {
               AI Agents should help your team move faster, not make them wonder what every conversation costs.
             </p>
             <p className="hero-copy">
-              HubSpot Breeze Customer Agent charges based on resolved conversations. Zia Agents gives sales and CX teams predictable AI Agent usage with 30M included tokens, so teams can adopt AI Agents across customer interactions and workflows without hesitation.
+              HubSpot Breeze Customer Agent charges 100 credits for every resolved conversation. That metered model discourages teams from adopting AI Agents freely across daily operations.
+
+Zia Agents includes 30M free monthly tokens on Zoho-hosted Standard models, giving sales and CX teams room to adopt AI Agents across customer interactions and workflows. Additional usage starts at $1 per 1M tokens.
             </p>
             <div className="hero-actions">
               <ButtonLink href="#difference" variant="primary">Explore Zia Agents</ButtonLink>
@@ -789,7 +791,7 @@ export default function StopCountingConversations() {
           <div className="quote-box">“Should I use my AI Agent for this?”</div>
           <div className="section-head center" style={{ marginTop: "28px", marginBottom: "30px" }}>
             <p className="section-copy">
-              That hesitation kills adoption. Customer AI agents should become part of daily operations, not a budgeting exercise.
+              That hesitation slows organization-wide adoption. Customer AI agents should become part of daily operations, not a budgeting exercise.
             </p>
           </div>
           <div className="problem-grid">
